@@ -1,0 +1,29 @@
+img {
+  display: block;
+  margin: auto;
+  /*width: 80%;*/
+}
+
+.col-xs-12 img {
+  width: 50%;
+
+}
+
+.logo {
+  width: 140px;
+  padding-top: 20px;
+}
+
+.row {
+  margin-top: 100px;
+}
+
+.bgcolor {
+  background-color: yellow;
+}
+
+.mainrow {
+  height: 25vw;
+  /*width: 100%;*/
+  /*padding: 10px;*/
+}

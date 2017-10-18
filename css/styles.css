@@ -1,7 +1,7 @@
 img {
   display: block;
   margin: auto;
-  /*width: 80%;*/
+  width: 80%;
 }
 
 .col-xs-12 img {
@@ -23,7 +23,107 @@ img {
 }
 
 .mainrow {
-  height: 25vw;
+  height: 465px;
   /*width: 100%;*/
-  /*padding: 10px;*/
+  padding: 90px 60px 0px 8%;
+  /*padding-top: 90px;*/
+}
+
+/*.col-sm-6 #section1 {
+  background-position: center;
+}*/
+
+.section1 {
+  background-image: url('https://omsi.edu/sites/default/files/home_camps.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50%;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.section2 {
+  background-image: url('https://omsi.edu/sites/default/files/pompeii_featured_1_s.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50%;
+  margin-bottom: 20px;
+}
+
+.section3 {
+  background-image: url('https://omsi.edu/sites/default/files/events_telescope_0_0.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50%;
+  background-color: green;
+  margin-bottom: 20px;
+}
+
+.section4 {
+  background-image: url('https://omsi.edu/sites/default/files/home_theater_popcorn_3.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50%;
+  margin-bottom: 20px;
+}
+
+h1, p {
+  vertical-align: middle;
+  width: 50%;
+  max-width: 450px;
+  text-align: center;
+}
+
+button {
+  background-color: #C8C8C8;
+  border: 1px solid #C8C8C8;
+  border-radius: 5px;
+  color: white;
+  /*height: 30px;*/
+  text-align: center;
+  padding: 10px 15px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+button:first-of-type {
+  margin-left: 155px;
+
+}
+
+.caption, .red-cta {
+  text-align: right;
+}
+
+.caption {
+  margin-top: 40px;
+  color: white;
+}
+
+
+.red-cta a {
+  color: red;
+}
+/*.col-sm-6  {
+  background-position: center;
+  background-color: red;
+}
+
+.col-md-12 {
+  background-position: right;
+}*/
+
+@media screen and (max-width: 991px) {
+  .mainrow {
+    background-position: bottom center;
+    background-color: red;
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainrow {
+    background-size: 40%;
+    height: 57vw;
+  }
 }

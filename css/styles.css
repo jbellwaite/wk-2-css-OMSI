@@ -1,3 +1,8 @@
+
+body {
+  color: rgba(0,0,0,0.6);
+}
+
 img {
   display: block;
   margin: auto;
@@ -6,7 +11,6 @@ img {
 
 .col-xs-12 img {
   width: 50%;
-
 }
 
 .logo {
@@ -18,53 +22,71 @@ img {
   margin-top: 100px;
 }
 
-.bgcolor {
+/*.bgcolor {
   background-color: yellow;
-}
+}*/
 
-.mainrow {
+/*.mainrow {
   height: 465px;
-  /*width: 100%;*/
+  width: 100%;
   padding: 90px 60px 0px 8%;
   /*padding-top: 90px;*/
-}
+
 
 /*.col-sm-6 #section1 {
   background-position: center;
 }*/
+.container {
+  height: 100%;
+}
+
+#section1a, #section3a {
+  background-color: #d1d1d1;
+}
+
+#section2a, #section4a {
+  background-color: #edeeef;
+}
+
+.content {
+  height: 465px;
+  padding: 90px 60px 0px 8%;
+}
 
 .section1 {
   background-image: url('https://omsi.edu/sites/default/files/home_camps.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 50%;
-  background-color: green;
-  margin-bottom: 20px;
+  background-size: 45%;
 }
 
 .section2 {
   background-image: url('https://omsi.edu/sites/default/files/pompeii_featured_1_s.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 50%;
-  margin-bottom: 20px;
+  background-position: bottom left;
+  background-size: 45%;
+
+  height: 465px;
+  padding: 90px 00px 0px 650px;
+  /*text-align: right;*/
+  /*background-color: #f2f2f2;*/
 }
 
 .section3 {
   background-image: url('https://omsi.edu/sites/default/files/events_telescope_0_0.png');
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 50%;
-  background-color: green;
-  margin-bottom: 20px;
+  background-size: 45%;
 }
 
 .section4 {
   background-image: url('https://omsi.edu/sites/default/files/home_theater_popcorn_3.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 50%;
-  margin-bottom: 20px;
+  background-position: bottom left;
+  background-size: 45%;
+  height: 465px;
+  padding: 90px 8% 0px 650px;
+  /*background-color: #f2f2f2;*/
 }
 
 h1, p {
@@ -74,9 +96,20 @@ h1, p {
   text-align: center;
 }
 
+.section2 h1, .section2 p, .section4 h1, .section4 p {
+  vertical-align: middle;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.section2 .caption, .section2 .red-cta, .section4 .caption, .section4 .red-cta {
+  text-align: left;
+}
+
 button {
-  background-color: #C8C8C8;
-  border: 1px solid #C8C8C8;
+  background-color: #b7b7b7;
+  border: 1px solid #b7b7b7;
   border-radius: 5px;
   color: white;
   /*height: 30px;*/
@@ -88,21 +121,43 @@ button {
 
 button:first-of-type {
   margin-left: 155px;
+}
 
+#section2 button {
+  margin-left: 168px;
+}
+
+#section3 button {
+  margin-left: 168px;
+}
+
+#section4 button:first-of-type {
+  margin-left: 102px;
+  margin-right: 8px;
 }
 
 .caption, .red-cta {
   text-align: right;
 }
 
+
+
 .caption {
   margin-top: 40px;
-  color: white;
+  color: grey;
 }
 
 
 .red-cta a {
   color: red;
+}
+
+p, li {
+  font-family: 'Play', sans-serif;
+}
+
+h1 {
+  font-family: 'Exo', sans-serif;
 }
 /*.col-sm-6  {
   background-position: center;
@@ -114,12 +169,45 @@ button:first-of-type {
 }*/
 
 @media screen and (max-width: 991px) {
-  .mainrow {
-    background-position: bottom center;
-    background-color: red;
-    height: 40vw;
+  .caption {
+    display: none;
   }
+
+  .red-cta a {
+    display: none;
+  }
+
+body {
+  background-color: #d1d1d1;
 }
+  .section1, .section2, .section3, .section4 {
+    background-position: center bottom;
+    background-color: #d1d1d1;
+    background-size: 70%;
+    width: 100%;
+    height: 40vw;
+    padding: 10px 5px 0px 5px;
+  }
+
+  h1, p {
+    vertical-align: middle;
+    width: 100%;
+    /*max-width: 450px;*/
+    text-align: center;
+  }
+
+  .section2 h1, .section2 p, .section4 h1, .section4 p {
+    vertical-align: middle;
+    width: 100%;
+    /*max-width: 450px;*/
+    text-align: center;
+  }
+
+  #section2a, #section4a {
+    background-color: #d1d1d1;
+  }
+
+  }
 
 @media screen and (max-width: 767px) {
   .mainrow {
